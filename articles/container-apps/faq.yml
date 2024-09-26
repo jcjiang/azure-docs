@@ -23,8 +23,15 @@ sections:
       - question: |
           Can I import my Azure Container Apps API from the context of API Management?
         answer: |
-          Yes.
-
+          Yes.  
+          
+  - name: Supported Regions
+    questions:
+      - question: |
+          Where can I find the most up-to-date source around supported regions?
+        answer: |
+          You can find a list of supported regions by running following command in the Azure CLI: `az provider show --namespace Microsoft.App --query "resourceTypes[?resourceType=='managedEnvironments'].locations"`
+          
   - name: Billing
     questions:
       - question: |
